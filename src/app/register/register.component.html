@@ -1,15 +1,12 @@
 <div>
     <form class="form">
         <span class="signup">Sign Up</span>
-        <input type="email" placeholder="Email address" class="form--input">
-        <input type="password" placeholder="Password" class="form--input">
-        <input type="password" placeholder="Confirm password" class="form--input">
+        <input type="text" [(ngModel)]="id" class="form--input">
+        <input type="text" [(ngModel)]="user_name" placeholder="user_name" class="form--input">
+        <input type="text" [(ngModel)]="password" placeholder="Confirm password" class="form--input">
 
-            <p>Already have account? <a href="">Sign</a></p>
-        <button class="form--submit">
-            Sign up
-        </button>
+        <p>Already have account? <a href="">Sign</a></p>
+
+        <button (click)="register()" class="form--submit" type="submit">Sign up</button>
     </form>
 </div>
-
-
